@@ -4,30 +4,53 @@ This is a simple webpack template to quick start your projects without the hassl
 
 # Get started
 
-# webpack setup
+To get your own copy of this template, follow the steps below
 
-1- create a package.json file with node package manager (npm)
+1. Fork this repo
 
-`npm init -y`
+<img src="./extra-assets/fork.JPG" alt="Fork repo by clicking on the fork button" title="Fork repo">
 
-2- Install webpack locally and install webpack-cli (webpack-cli will allow to run webpack from command line)
+2. Make a new repository from this forked template
 
-`npm install webpack webpack-cli --save-dev`
+<img src="./extra-assets/create-new-repo.JPG" alt="Create a new repository by clicking on the 'use this template' button and selecting 'create a new repository' " title="Create a new repository">
 
-**Note** we are installing the above dependencies as dev dependencies (--save-dev) because they are only required by us as developers when we are developing the application. They will not be required in the app launched in production.
+3. Clone this repository to your local environment
 
-3- Create your html and js files. You can follow the following folder structure
+<img src="./extra-assets/clone-repo.JPG" alt="Clone the repository by clicking on the 'clone' button and copying the URL from HTTPS" title="Clone repository">
 
+```sh
+  git clone https://github.com/YOUR_GITHUB_NAME/webpack-starter-template.git
+```
+
+4. Install all node packages needed
+
+```sh
+  npm install
+```
+
+5. To set up a local dev server, use the command
+
+```sh
+  npm start
+```
+
+6. To bundle your js files, use the command
+
+```sh
+  npm run build
+```
+
+# Folder Structure
+
+```sh
 project
 |- package.json
 |- package-lock.json
 |- /dist
-|- index.html
+  |- index.html
+  |- bundle.js
 |- /src
-|- index.js
+  |- index.js
+```
 
-write some code, link the 2 files and then in the command line run
-
-`npx webpack`
-
-this will create the bundle file for you
+Add your files in the source folder and import them in the index.js file as this is the entry point from where webpack starts its bundling process.
