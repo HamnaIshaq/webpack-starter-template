@@ -8,4 +8,5 @@ function component() {
   return element;
 }
 
-document.body.appendChild(component());
+const root = document.querySelector("#root");
+root.appendChild(component());
