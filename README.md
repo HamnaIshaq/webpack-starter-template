@@ -80,10 +80,16 @@ project
 |- package.json
 |- package-lock.json
 |- /dist
+  |- favicon.png
   |- index.html
   |- bundle.js
 |- /src
+  |- /images
+    |- favicon.png
   |- index.js
+  |- style.css
+  |- template.html
+
 ```
 
 Add your files in the source folder and import them in the index.js file as this is the entry point from where webpack starts its bundling process.
