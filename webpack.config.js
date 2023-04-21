@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -11,6 +12,13 @@ module.exports = {
   devServer: {
     static: "./dist",
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Webpack Starter Template",
+      template: "./src/template.html",
+      favicon: path.resolve(__dirname, "./src/images/favicon.png"),
+    }),
+  ],
   module: {
     rules: [
       {
