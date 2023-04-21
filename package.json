@@ -9,6 +9,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/{USERNAME}/{REPONAME}.git"
+  },
   "author": "Hamna Ishaq",
   "license": "ISC",
   "devDependencies": {
