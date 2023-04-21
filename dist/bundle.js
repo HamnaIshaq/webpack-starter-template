@@ -16,7 +16,7 @@
   \**********************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\nfunction component() {\n  const element = document.createElement(\"div\");\n  element.textContent = \"Hello World\";\n  return element;\n}\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://webpack-template/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\nfunction component() {\n  const element = document.createElement(\"div\");\n  element.textContent = \"Hello World\";\n  return element;\n}\nconst root = document.querySelector(\"#root\");\nroot.appendChild(component());\n\n//# sourceURL=webpack://webpack-template/./src/index.js?");
 
 /***/ }),
 
