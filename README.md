@@ -40,6 +40,39 @@ To get your own copy of this template, follow the steps below
   npm run build
 ```
 
+7. To host your completed project on Github pages, we would need to perform the following steps:
+
+   - First go to the package.json file and find the repository key shown below:
+
+     ```sh
+       "repository": {
+         "type": "git",
+         "url": "git+https://github.com/{USERNAME}/{REPONAME}.git"
+       }
+     ```
+
+   - Change the parameters `{USERNAME}` and `{REPONAME}` with your github username and repository name.
+
+     Lets say your username is `exampleUsername` and repository name is `webpack-starter-template` then the above will be modified as:
+
+     ```sh
+       "repository": {
+         "type": "git",
+         "url": "git+https://github.com/exampleUsername/webpack-starter-template.git"
+       }
+     ```
+
+   - Deploy your project on Github pages with the following command:
+
+     ```sh
+       npm run deploy
+     ```
+
+     The above command does 2 things
+
+     - It bundles our code in the dist folder using `npm run predeploy`
+     - `npm run deploy` then pushes everything inside the dist folder to `gh-pages` branch. If this branch does not exist in your project, this command will create it.
+
 # Folder Structure
 
 ```sh
