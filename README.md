@@ -87,3 +87,7 @@ project
 ```
 
 Add your files in the source folder and import them in the index.js file as this is the entry point from where webpack starts its bundling process.
+
+# Acknowledgements
+
+- <a href="https://www.flaticon.com/free-icons/collage" title="collage icons">Collage icons created by Fathema Khanom - Flaticon</a>
